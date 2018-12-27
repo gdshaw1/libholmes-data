@@ -8,6 +8,16 @@ signatures and other information used by libholmes at runtime. It is
 published separately from the remainder of the source code because it is
 expected to change more rapidly.
 
+## Building
+
+The data files are built by executing the script:
+
+./build.sh
+
+This merges the small JSON files which are the preferred format for
+editing into larger JSON files which are in a suitable format for use
+by the library.
+
 ## Copyright and licensing
 
 libholmes is copyright 2018 Graham Shaw.
