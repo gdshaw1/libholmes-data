@@ -1,0 +1,56 @@
+[
+  {
+    "variant": "32n",
+    "lengthSuffix": true,
+    "description": "BSD-style ping",
+    "data": [
+      {
+        "type": "timeval",
+        "byteOrder": "network",
+        "width": 32
+      },
+      {
+        "type": "step",
+        "init": 8,
+        "step": 1,
+        "count": 48
+      }
+    ]
+  },
+  {
+    "variant": "32h",
+    "lengthSuffix": true,
+    "description": "Linux-style ping (32-bit, little-endian)",
+    "data": [
+      {
+        "type": "timeval",
+        "byteOrder": "host",
+        "width": 32
+      },
+      {
+        "type": "step",
+        "init": 8,
+        "step": 1,
+        "count": 48
+      }
+    ]
+  },
+  {
+    "variant": "64h",
+    "lengthSuffix": true,
+    "description": "Linux-style ping (64-bit, little-endian)",
+    "data": [
+      {
+        "type": "timeval",
+        "byteOrder": "host",
+        "width": 64
+      },
+      {
+        "type": "step",
+        "init": 16,
+        "step": 1,
+        "count": 40
+      }
+    ]
+  }
+]
