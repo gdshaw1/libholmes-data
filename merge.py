@@ -23,9 +23,16 @@ for id in sorted(ids):
     infilename = '%s-%s.json' % (module, id)
     inpathname = os.path.join('src', module, infilename)
     with open(inpathname, 'r') as infile:
-        signature = json.load(infile)
-        signature['_id'] = "%s-%s" % (module, id)
-        signatures.append(signature);
+        filesignatures = json.load(infile)
+        if isinstance(filesignatures, dict):
+            filesignatures = [filesignatures]
+        for signature in filesignatures:
+            if "variant" in signature:
+                variant = signature["variant"]
+                signature['_id'] = "%s-%s:%s" % (module, id, variant)
+            else:
+                signature['_id'] = "%s-%s" % (module, id)
+            signatures.append(signature);
 
 if not os.path.exists('target'):
     os.mkdir('target')
