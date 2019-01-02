@@ -1,0 +1,18 @@
+{
+  "lengthSuffix": true,
+  "description": "IOS-style ping",
+  "data": [
+    {
+      "type": "wildcard",
+      "length": 8
+    },
+    {
+      "type": "step",
+      "byteOrder": "network",
+      "width": 16,
+      "init": 43981,
+      "step": 0,
+      "minCount": 1
+    }
+  ]
+}
