@@ -1,0 +1,12 @@
+{
+  "lengthSuffix": true,
+  "description": "Windows-style ping",
+  "data": [
+    {
+      "type": "hex",
+      "content": "6162636465666768696a6b6c6d6e6f7071727374757677",
+      "repeat": true,
+      "minLength": 1
+    }
+  ]
+}
