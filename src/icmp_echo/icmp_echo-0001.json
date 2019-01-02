@@ -1,16 +1,12 @@
 {
-  "description": "BSD-style ping",
+  "lengthSuffix": true,
+  "description": "Zero-filled ping",
   "data": [
     {
-      "type": "timeval",
-      "byteOrder": "network",
-      "width": 32
-    },
-    {
       "type": "step",
-      "init": 8,
-      "step": 1,
-      "count": 48
+      "init": 0,
+      "step": 0,
+      "minCount": 1
     }
   ]
 }
